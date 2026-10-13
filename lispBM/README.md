@@ -4021,6 +4021,8 @@ The following selection of app and motor parameters can be read and set from Lis
 'l-current-max          ; Maximum current in A
 'l-current-min-scale    ; Scaled minimum current, 0.0 to 1.0
 'l-current-max-scale    ; Scaled maximum current, 0.0 to 1.0
+'l-in-current-min-scale ; Scaled minimum input current, 0.0 to 1.0 (FW 7.01+)
+'l-in-current-max-scale ; Scaled maximum input current, 0.0 to 1.0 (FW 7.01+)
 'l-in-current-min       ; Minimum input current in A (a negative value)
 'l-in-current-max       ; Maximum input current in A
 'l-abs-current-max      ; Abs max current in A
@@ -4116,6 +4118,10 @@ The following selection of app and motor parameters can be read and set from Lis
                         ;    12: SENSOR_PORT_MODE_CUSTOM_ENCODER
                         ;    13: SENSOR_PORT_MODE_PWM
                         ;    14: SENSOR_PORT_MODE_PWM_ABI
+                        ;    15: SENSOR_PORT_MODE_MA782,
+                        ;    16: SENSOR_PORT_MODE_AMT22,
+                        ;    17: SENSOR_PORT_MODE_MT6835_SPI_HW,
+                        ;    18: SENSOR_PORT_MODE_PWM_ABI_INVERTED,
 'm-fault-stop-time-ms   ; Milliseconds to stop the motor for after fauls (FW6.06.5)
 'si-motor-poles         ; Number of motor poles, must be multiple of 2
 'si-gear-ratio          ; Gear ratio (Added in FW 6.05)
@@ -4272,6 +4278,8 @@ The following selection of app and motor parameters can be read and set from Lis
 'adc-v1-max             ; Throttle 1 high fault voltage (Added in FW 6.05)
 'adc-v2-start           ; Throttle 2 start voltage (Added in FW 7.00.1)
 'adc-v2-end             ; Throttle 2 end voltage (Added in FW 7.00.1)
+'adc-coast-brake-level  ; Brake to apply when coasting (Added in FW 7.01)
+'adc-coast-brake-ramp-time ; Time to ramp up coasting brake in seconds (Added in FW 7.01)
 'pas-current-scaling    ; PAS current scaling (Added in FW 6.05)
 
 ; VESC Remote App (Added in firmware 7.00)

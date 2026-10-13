@@ -6,6 +6,9 @@
 * Added crash_diag terminal command: https://github.com/vedderb/bldc/pull/877
 * LispBM:
 	* Improve stability when not using the image system
+	* Many new extensions and access to more configuration parameters.
+* Added PWM + ABI Inverted encoder mode.
+* App ADC coasting brake support.
 
 ### 7.00
 #### 2026-05-15
